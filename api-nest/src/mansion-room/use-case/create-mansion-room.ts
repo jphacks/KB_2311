@@ -31,12 +31,12 @@ export class CreateMansionRoom {
     //写真を生成する
     await Promise.all(
       mansion_room_photos.map(async (photo: string) => {
-        const url = await this.photoService.createWithMansionRoom({
+        await this.photoService.createWithMansionRoom({
           mansion_room_id: mansionRoom.id,
           image: photo,
         });
       }),
-    ).catch(async (error) => {
+    ).catch(async () => {
       //rentalHouseを削除する
       await this.mansionRoomService.delete(mansionRoom.id);
     });
