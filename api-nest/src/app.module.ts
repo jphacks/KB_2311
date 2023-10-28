@@ -7,6 +7,7 @@ import { AuthModule } from './auth/auth.module';
 import { RentalHouseModule } from './rental-house/rental-house.module';
 import { PhotoModule } from './photo/photo.module';
 import { MansionModule } from './mansion/mansion.module';
+import { MansionRoomModule } from './mansion-room/mansion-room.module';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
@@ -19,6 +20,7 @@ import { ConfigModule } from '@nestjs/config';
     RentalHouseModule,
     PhotoModule,
     MansionModule,
+    MansionRoomModule,
   ],
   controllers: [AppController],
   providers: [AppService, PrismaService],
