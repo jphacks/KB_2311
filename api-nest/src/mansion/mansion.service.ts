@@ -6,6 +6,12 @@ import { PrismaService } from 'src/prisma.service';
 export class MansionService {
   constructor(private readonly prismaService: PrismaService) {}
 
+  findOne(id: string): PrismaPromise<Mansion> {
+    return this.prismaService.mansion.findUnique({
+      where: { id },
+    });
+  }
+
   findOneByRentalHouseId(rentalHouseId: string): PrismaPromise<Mansion> {
     return this.prismaService.mansion.findUnique({
       where: {
