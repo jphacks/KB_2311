@@ -16,17 +16,17 @@ export class CreateMansionRoom {
 
   async handle({
     input,
-    mansion_id,
+    rental_house_id,
   }: {
     input: CreateMansionRoomSystemInput;
-    mansion_id: string;
+    rental_house_id: string;
   }): Promise<{ id: string }> {
     const { mansion_room_photos, ...rest } = input;
-    // const rentalHouse = await this.rentalHouseService.findOne(mansion_id);
-    // const mansion = await this.mansionService.findOneByRentalHouseId(
-    //   rentalHouse.id,
-    // );
-    const mansionRoom = await this.mansionRoomService.create(rest, mansion_id);
+    const rentalHouse = await this.rentalHouseService.findOne(rental_house_id);
+    const mansion = await this.mansionService.findOneByRentalHouseId(
+      rentalHouse.id,
+    );
+    const mansionRoom = await this.mansionRoomService.create(rest, mansion.id);
 
     //写真を生成する
     await Promise.all(
@@ -41,6 +41,6 @@ export class CreateMansionRoom {
       await this.mansionRoomService.delete(mansionRoom.id);
     });
 
-    return { id: mansionRoom.id };
+    return { id: rentalHouse.id };
   }
 }

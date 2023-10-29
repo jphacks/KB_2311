@@ -11,15 +11,13 @@ export class MansionRoomController {
   constructor(
     private readonly mansionRoomService: MansionRoomService,
     private readonly createMansionRoom: CreateMansionRoom,
-    private readonly findRoomWithRentalHouse: FindRoomWithRentalHouse
+    private readonly findRoomWithRentalHouse: FindRoomWithRentalHouse,
   ) {}
 
   @Get('/:id')
-  async findOne(
-    @Param('id') id: string
-    ): Promise<MansionRoomEntity> {
+  async findOne(@Param('id') id: string): Promise<MansionRoomEntity> {
     const data = await this.mansionRoomService.findOneWithPhoto(id);
-    return data
+    return data;
   }
 
   //roomとその親に当たるrental_houseを取得する。
@@ -30,17 +28,16 @@ export class MansionRoomController {
   ) {
     return await this.findRoomWithRentalHouse.handle({
       rental_house_id: rental_house_id,
-      room_id: id
+      room_id: id,
     });
   }
 
   @UseGuards(AuthGuard)
-  @Post('/create/:mansion_id')
+  @Post('/create/:rental_house_id')
   async create(
-    @Param('mansion_id') mansion_id: string,
-    @Body() input: CreateMansionRoomSystemInput
-  ): Promise<{id: string}> {
-    return await this.createMansionRoom.handle({input, mansion_id});
+    @Param('rental_house_id') rental_house_id: string,
+    @Body() input: CreateMansionRoomSystemInput,
+  ): Promise<{ id: string }> {
+    return await this.createMansionRoom.handle({ input, rental_house_id });
   }
-
 }
