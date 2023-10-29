@@ -43,31 +43,18 @@
 ## 開発技術
 
 ### 活用した技術
-#### API・データ
-
-**API**
-    - RestAPI
-
-**データ**
-    - Postgres
-
-
-#### フレームワーク・ライブラリ・モジュール
-**プログラミング言語**
+#### API
+  - RestAPI
+#### データ
+  - Postgres
+#### プログラミング言語
  - TypeScript
-
-**サーバーサイド**
-
-- Nest.js
-
-**フロントエンド**
+#### サーバーサイド
+- NestJS
+#### フロントエンド
 - React
 - Next.js
-- Tailwind
-
-#### デバイス
-  - PC
-
+- Tailwind CSS
 
 ### 独自技術
 
