@@ -124,7 +124,7 @@ FillHomeは人件費を削減しているため、1つの契約に関する利�
 - React
 - Next.js
 - Tailwind CSS
-- 
+- Recoil
 
 ### 独自技術
 
