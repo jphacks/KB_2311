@@ -19,7 +19,8 @@ import { EditRentalHouseUseCase } from './use-case/edit-rental-house-use-case';
     OwnerService,
     MansionService,
     SearchRentalHouseUseCase,
-    EditRentalHouseUseCase
-  ]
+    EditRentalHouseUseCase,
+  ],
+  exports: [RentalHouseService],
 })
 export class RentalHouseModule {}
