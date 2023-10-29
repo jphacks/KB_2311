@@ -6,5 +6,6 @@ import { PhotoService } from 'src/photo/photo.service';
 
 @Module({
   providers: [MansionService, PrismaService, MansionRoomService, PhotoService],
+  exports: [MansionService],
 })
 export class MansionModule {}
