@@ -1,11 +1,14 @@
 # FillHome
 
-<img src="https://github.com/jphacks/KB_2311/assets/89170014/fead6383-4940-4ecc-9b8a-edbefb2e0c9e" widh="800px"/>
+<img src="https://github.com/jphacks/KB_2311/assets/89170014/fead6383-4940-4ecc-9b8a-edbefb2e0c9e" width="800px"/>
+
+**👉[デモ動画](
+https://drive.google.com/file/d/1cdbG8yvOmXfY1m_azY8HOc2EtCCf1kaD/view?usp=sharing)を見る**
 
 ## 製品概要
 遠方から引っ越す際に、内見したい物件が複数ある人が内見のために引っ越し先に赴く際、候補の物件に泊まることができるWebアプリです。
 
-<img src="https://github.com/jphacks/KB_2311_1/assets/89170014/033f7ff7-8156-46c8-9eeb-06db71520d85" widh="800px"/>
+<img src="https://github.com/jphacks/KB_2311_1/assets/89170014/033f7ff7-8156-46c8-9eeb-06db71520d85" width="800px"/>
 
 ### 背景(製品開発のきっかけ、課題等）
 #### きっかけ
@@ -59,7 +62,7 @@ FillHomeを使えば、自分でチェックイン・チェックアウトがで
 <br>清掃代
 管理会社・大家への配分
 
-<img src="https://github.com/jphacks/KB_2311_1/assets/89170014/a3f4a25f-24ea-419b-8ffc-708dfce117aa" widh="800px"/>
+<img src="https://github.com/jphacks/KB_2311_1/assets/89170014/a3f4a25f-24ea-419b-8ffc-708dfce117aa" width="800px"/>
 
 ### 市場
 #### 市場規模
@@ -67,7 +70,7 @@ FillHomeを使えば、自分でチェックイン・チェックアウトがで
 また、厚生労働省の「テレワーク導入状況」によると近年のテレワークの導入率は、コロナ禍によって急激に増加し、賃借人において働く場所・住む場所が同じになり住宅環境は特に大事になってくると考えられる。この結果、家を選ぶまでのプロセスを重視するため、FillHomeを使いたい人が増えていくと考えられる。
 #### ペルソナ
 グローバル都市不動産研究所の研究より女性は「鉄道の最寄り駅に近いこと」、「買い物などの日常生活がしやすい」、「治安が良く安心・安全」など環境を重視する傾向にあること。また、実際ヒアリングした中で、奈良から東京に就職のために引っ越しする女性がこのサービスをぜひ使いたいとおっしゃっていただけたので以下のようなペルソナを設定した。
-<img src="https://github.com/jphacks/KB_2311_1/assets/89170014/ecab8334-56aa-4af9-b69f-8ed333cee43e" widh="800px"/>
+<img src="https://github.com/jphacks/KB_2311_1/assets/89170014/ecab8334-56aa-4af9-b69f-8ed333cee43e" width="800px"/>
 
 ### 今後の展望
 #### 今後の戦略
@@ -79,7 +82,7 @@ FillHomeは人件費を削減しているため、1つの契約に関する利�
 #### 追加ターゲット・機能
 現在は20代女性の1人暮らしに焦点を当てていますが、子供連れのご家庭など引っ越しをしたら再度しづらいターゲットにも拡大し誰もが後悔しない家選択をできること・レインズなどの物件データベースと接続し、物件を探す～契約するまでの顧客体験をより豊富にしていくことが将来できるとよいと考えています。
 
-<img src="https://github.com/jphacks/KB_2311_1/assets/89170014/2cd884a5-b5ff-459a-ad40-1327737d0dfd" widh="800px"/>
+<img src="https://github.com/jphacks/KB_2311_1/assets/89170014/2cd884a5-b5ff-459a-ad40-1327737d0dfd" width="800px"/>
 
 ### 注力したこと（こだわり等）
 #### Biz
