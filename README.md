@@ -34,7 +34,7 @@
 - API設計（stoplight）
 - DB設計(正規化, 拡張性を担保する)
 
-<img src="https://github.com/jphacks/KB_2311/assets/69971830/25aa04ec-56af-4c60-a50f-50fc1af578d1" width="800px">
+<img src="https://github.com/jphacks/KB_2311/assets/69971830/25aa04ec-56af-4c60-a50f-50fc1af578d1"/>
 
 **フロントエンド**
 - 今後機能実装していくための拡張性を考え開発(Feature構成)
