@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/prisma.service';
-import { PrismaPromise } from '@prisma/client';
+import { Owner, PrismaPromise } from '@prisma/client';
 import { OwnerEntity } from './entities/owner.entity';
 import { CreateOwnerInput } from './dto/create-owner.input';
 
@@ -8,17 +8,21 @@ import { CreateOwnerInput } from './dto/create-owner.input';
 export class OwnerService {
   constructor(private readonly prismaService: PrismaService) {}
 
+  findOne(id: string): PrismaPromise<OwnerEntity> {
+    return this.prismaService.owner.findUnique({
+      where: { id },
+    });
+  }
+
   findByEmail(email: string): PrismaPromise<OwnerEntity> {
-    return this.prismaService.owner.findFirst({ where: { email } })
-  };
+    return this.prismaService.owner.findFirst({ where: { email } });
+  }
 
   findByFirebaseUid(firebase_uid: string): PrismaPromise<OwnerEntity> {
-    return this.prismaService.owner.findFirst({where: { firebase_uid }})
-  };
+    return this.prismaService.owner.findFirst({ where: { firebase_uid } });
+  }
 
-  create(
-    input : CreateOwnerInput
-  ): PrismaPromise<OwnerEntity> {
-    return this.prismaService.owner.create({data: input});
-  };
+  create(input: CreateOwnerInput): PrismaPromise<OwnerEntity> {
+    return this.prismaService.owner.create({ data: input });
+  }
 }
